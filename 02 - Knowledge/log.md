@@ -10,3 +10,8 @@
 - Trích xuất chi tiết cấu trúc 12 chương từ Beg.GuidetoDesigingEmbeddedSystems_ch1-6 và ch7-12
 - Xây dựng lộ trình 15 buổi tích hợp Studio (50 phút Lý thuyết + 95 phút Thực hành + 35 phút Đo kiểm/Under the Hood)
 - Lập bảng ma trận phân bổ 45 giờ, danh mục linh kiện BOM và bộ tiêu chí đánh giá Rubric cho sinh viên Điện tử
+
+## [2026-11-15] ingest | Hoàn thành biên soạn đồng bộ 11 Chương Giáo trình Điều khiển Ngoại vi từ 2 tập sách ARM Education
+- Biên soạn chi tiết toàn bộ 11 chương giáo trình kết hợp giữa lý thuyết vi xử lý 32-bit, tính toán mạch nguyên lý điện tử (Schematic), phân tích thanh ghi và mã nguồn 3 tầng (Mbed C++, STM32 HAL C, CMSIS Bare-metal)
+- Chuyển ngữ và nâng cấp toàn bộ hệ thống ví dụ thực chứng từ Chapter 1 đến Chapter 12 của sách giáo trình ARM (Nucleo-F429ZI Smart Home System)
+- Thiết lập đầy đủ bài tập tính toán mạch và câu hỏi kiểm tra đánh giá theo chuẩn CDIO
