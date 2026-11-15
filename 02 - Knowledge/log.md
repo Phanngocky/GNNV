@@ -15,3 +15,8 @@
 - Biên soạn chi tiết toàn bộ 11 chương giáo trình kết hợp giữa lý thuyết vi xử lý 32-bit, tính toán mạch nguyên lý điện tử (Schematic), phân tích thanh ghi và mã nguồn 3 tầng (Mbed C++, STM32 HAL C, CMSIS Bare-metal)
 - Chuyển ngữ và nâng cấp toàn bộ hệ thống ví dụ thực chứng từ Chapter 1 đến Chapter 12 của sách giáo trình ARM (Nucleo-F429ZI Smart Home System)
 - Thiết lập đầy đủ bài tập tính toán mạch và câu hỏi kiểm tra đánh giá theo chuẩn CDIO
+
+## [2026-11-15] ingest | Tái cấu trúc chuẩn hóa tuyệt đối 12 Chương Giáo trình theo đúng 2 tập sách ARM Education dành riêng cho STM32F407
+- Định vị học phần học sau học phần Vi điều khiển cơ bản: Bỏ qua các kiến thức nhập môn chung chung, tập trung trực tiếp vào kiến trúc Cortex-M4 168MHz và ghép nối ngoại vi chuyên sâu
+- Chuyển đổi và thiết lập toàn bộ sơ đồ chân, tính toán phần cứng và mã nguồn 12 chương tương thích 100% với dòng vi điều khiển STM32F407 (LQFP100)
+- Hoàn thiện toàn bộ 12 chương giáo trình theo đúng thứ tự và các ví dụ thực chứng từ Chapter 1 đến Chapter 12 của ARM Education
