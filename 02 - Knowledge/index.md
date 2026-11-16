@@ -14,6 +14,7 @@ Chào mừng bạn đến với Second Brain - Hệ thống Quản trị Tri th�
 - [[truyen-thong-uart]] - Truyền thông nối tiếp dị bộ
 - [[truyen-thong-spi]] - Truyền thông nối tiếp đồng bộ tốc độ cao
 - [[truyen-thong-i2c]] - Chuẩn giao tiếp 2 dây cho cảm biến và IC ngoại vi
+- [[giao-tiep-1-wire-ds18b20]] - Chuẩn giao tiếp 1-Wire và cảm biến nhiệt độ số DS18B20
 - [[bo-dem-dma]] - Cơ chế truyền dữ liệu trực tiếp tối ưu hóa tải CPU
 - [[mang-can-bus]] - Mạng truyền thông tin cậy trong môi trường công nghiệp
 
@@ -27,7 +28,7 @@ Chào mừng bạn đến với Second Brain - Hệ thống Quản trị Tri th�
 - [[chuong-03-quan-ly-thoi-gian-va-tin-hieu-adc]] - Chương 3: Quản lý Thời gian và Đo lường Tín hiệu Tương tự (ADC)
 - [[chuong-04-may-trang-thai-fsm-va-rtc]] - Chương 4: Máy Trạng thái Hữu hạn (FSM) và Đồng hồ Thời gian thực (RTC)
 - [[chuong-05-mo-dun-hoa-phan-mem-nhung]] - Chương 5: Mô-đun hóa Mã nguồn Phần mềm Hệ thống Nhúng
-- [[chuong-06-man-hinh-lcd-bus-i2c-va-spi]] - Chương 6: Màn hình LCD và Truyền thông Vi mạch qua Bus I2C & SPI
+- [[chuong-06-man-hinh-lcd-bus-i2c-va-spi]] - Chương 6: Màn hình LCD và Truyền thông Vi mạch (I2C, 1-Wire, SPI)
 - [[chuong-07-dieu-khien-dong-co-dc-relay-va-ngat]] - Chương 7: Điều khiển Động cơ DC bằng Relay và Cơ chế Ngắt Thời gian thực
 - [[chuong-08-pwm-hoi-tiep-am-va-am-thanh]] - Chương 8: Quản lý Thời gian Nâng cao, PWM, Hồi tiếp Âm & Phát Âm thanh
 - [[chuong-09-luu-tru-the-nho-sd-va-git]] - Chương 9: Lưu trữ Tệp tin trên Thẻ nhớ SD & Quản lý Kho Phần mềm (Git)

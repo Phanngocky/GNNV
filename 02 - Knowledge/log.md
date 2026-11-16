@@ -20,3 +20,8 @@
 - Định vị học phần học sau học phần Vi điều khiển cơ bản: Bỏ qua các kiến thức nhập môn chung chung, tập trung trực tiếp vào kiến trúc Cortex-M4 168MHz và ghép nối ngoại vi chuyên sâu
 - Chuyển đổi và thiết lập toàn bộ sơ đồ chân, tính toán phần cứng và mã nguồn 12 chương tương thích 100% với dòng vi điều khiển STM32F407 (LQFP100)
 - Hoàn thiện toàn bộ 12 chương giáo trình theo đúng thứ tự và các ví dụ thực chứng từ Chapter 1 đến Chapter 12 của ARM Education
+
+## [2026-11-16] edit | Rà soát toàn diện giáo trình Điều khiển Ngoại vi (Kế thừa sau học phần Vi điều khiển đến UART)
+- Định vị rõ ranh giới học phần: Kế thừa nền tảng Vi điều khiển STM32F407 (đã học đến UART), tập trung vào làm chủ thế giới ngoại vi thực tế xung quanh để hoàn thiện hệ thống nhúng
+- Bổ sung chuyên đề sâu về chuẩn giao tiếp 1-Wire và cảm biến nhiệt độ số chính xác cao DS18B20 trên chân PB12 (định thời micro-giây DWT, bảng đối sánh Song song vs 1-Wire vs I2C vs SPI)
+- Cập nhật đề cương chi tiết học phần, bảng phân bổ 45 giờ 15 buổi tích hợp Studio, hệ thống index tri thức và đồng bộ lên GitHub
