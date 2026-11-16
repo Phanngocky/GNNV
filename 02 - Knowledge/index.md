@@ -21,6 +21,8 @@ Chào mừng bạn đến với Second Brain - Hệ thống Quản trị Tri th�
 ## 3. Tổng Hợp & Đề Cương (Synthesis)
 - [[khung-chuong-trinh-gnnv]] - Đề cương chi tiết học phần Điều khiển Thiết bị Ngoại vi
 - [[phan-bo-chuong-trinh-45-gio]] - Phân bổ chi tiết 15 buổi (45 giờ) tích hợp lý thuyết & thực hành Studio
+- [[he-thong-15-bai-lab-thuc-hanh]] - Trọn bộ 15 Bài Thí nghiệm Thực hành (Lab Manual) trên STM32F407
+- [[ngan-hang-cau-hoi-thi-kthp]] - Ngân hàng 120 câu hỏi trắc nghiệm & 15 bài toán thiết kế mạch ngoại vi
 
 ## 4. 12 Chương Giáo Trình Chuẩn Hóa Theo Sách ARM (Target: STM32F407)
 - [[chuong-01-tong-quan-he-thong-nhung-smart-home]] - Chương 1: Tổng quan Hệ thống Nhúng & Ứng dụng Báo động Đầu tiên
