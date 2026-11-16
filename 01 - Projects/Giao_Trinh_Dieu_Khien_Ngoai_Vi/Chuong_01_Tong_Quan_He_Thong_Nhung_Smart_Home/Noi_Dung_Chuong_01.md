@@ -46,15 +46,54 @@ Vi điều khiển **STM32F407VGT6 / STM32F407VET6** thuộc dòng vi điều kh
 ## 1.4. NGUYÊN LÝ GHÉP NỐI ĐIỆN TỬ CHO SINH VIÊN CHUYÊN NGÀNH
 
 ### 1. Mạch ngõ vào cảm biến số & Nút nhấn (Chế độ Pull-down)
-- Chân vi điều khiển được cấu hình kích hoạt điện trở kéo xuống nội ($R_{PD} \approx 40\text{ k}\Omega$).
+- Chân vi điều khiển được cấu hình kích hoạt điện trở kéo xuống nội ($R_{PD} \approx 40\text{ k}\Omega$) hoặc trở kéo xuống ngoài $10\text{ k}\Omega$:
 - Khi nút hở: Chân `PE2..PE5` được kéo về $0\text{V}$ (Mức logic 0 chắc chắn, chống nhiễu bắt sóng trôi nổi).
 - Khi nút đóng: Tiếp điểm nối lên đường nguồn $3.3\text{V}$, dòng điện nạp vào chân MCU làm điện áp nhảy lên $3.3\text{V}$ (Mức logic 1).
+
+```
+        +3.3V
+          |
+         o/ o  Công tắc / Nút bấm (PE2..PE5)
+          |
+  PE2 ----+---------------------------------> Chân GPIO Input STM32F407
+          |
+         [R]   R_pulldown = 10k Ohm (Trở kéo xuống ngoài)
+          |
+         GND
+```
 
 ### 2. Mạch ngõ ra điều khiển LED báo động và Tải còi Buzzer
 - Chân `PD12` cấu hình **Output Push-Pull**, có khả năng cấp dòng (Source) lên tới $8\text{ mA} \div 20\text{ mA}$.
 - Công thức tính toán điện trở hạn dòng LED màu xanh lá ($V_F \approx 2.2\text{ V}, I_F = 5\text{ mA}$):
-  $$R_{limit} = \frac{V_{OH} - V_F}{I_F} = \frac{3.3\text{ V} - 2.2\text{ V}}{0.005\text{ A}} = 220\text{ }\Omega$$
-- Đối với còi Buzzer hoặc Relay đóng cắt còi hú công suất lớn 12V: Bắt buộc dùng Transistor đệm dòng (C1815 / 2N2222) và diode dập xung ngược $1N4007$.
+  $$R_{limit} = \frac{V_{OH} - V_F}{I_F} = \frac{3.3\text{ V} - 2.2\text{ V}}{0.005\text{ A}} = 220\text{ }\Omega \implies \text{Chọn điện trở chuẩn } 220\Omega \div 330\Omega.$$
+
+```
+STM32F407                  R_limit = 220 - 330 Ohm
+[ PD12 / GPIO_Out ] ------------/\/\/\/\/------------>|-----------+ (Anode LED)
+                                                      LED 5mm     |
+[ GND             ] ----------------------------------------------+ (Cathode LED)
+```
+
+- Đối với còi Buzzer hoặc Relay đóng cắt còi hú công suất lớn 12V: Bắt buộc dùng Transistor đệm dòng (C1815 / 2N2222) và diode dập xung ngược $1N4007$:
+
+```
+                            +5V / +12V
+                                 |
+                                 +---------------+
+                                 |               |
+                                --- Diode       [+] Còi Báo Động
+                           1N4007^  Dập Xung   [BUZZER] Piezo Buzzer
+                                 |               |
+                                 +---------------+
+                                 |
+                                 | Collector
+                             +-------+
+         Base                |  NPN  |
+  PD11 ------/\/\/\/\/-------| 2N2222|
+             R_B = 1k Ohm    +-------+
+                                 | Emitter
+                                GND
+```
 
 ---
 
